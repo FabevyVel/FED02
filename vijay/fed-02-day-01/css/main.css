@@ -1,0 +1,43 @@
+.container{width: 1300px;
+margin:auto;
+outline:solid 2px;}
+.quickconnectflex-box{
+    display: flex;
+    justify-content: space-between;
+}
+.contactinfoflex-box{
+    display: flex;
+    justify-content:space-between ;
+}
+.aboutusflex-box{
+    display: flex;
+}
+.aboutusflex-box.about-image,
+.aboutusflex-box.about-text{
+    width:50%;
+}
+.features-flexbox{
+    display: flex;
+    flex-wrap:wrap;
+}
+.features-flexbox .featuresflex{
+    width:33.33% ;
+    height: 100px;
+    outline: solid 2px red;
+  }
+.achievements-flexbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.achievements-flexbox.achievementsflex{
+    width:50%;
+    height: 100px;
+}
+.services-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-flexbox.serviceflex{
+    width: 33.33%;
+    height:100px;
+}
