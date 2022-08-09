@@ -4,10 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+
+
 .container{
     width: 85%;
     margin: auto;
 }
+
+
+
+
+
 .quick-contact{
     border-bottom: 1px solid rgb(0 0 0 / 6%);
 }
@@ -22,20 +33,30 @@
 .flex-quick-contact a{
     display: inline-block;
     text-decoration: none;
-    padding: 10px 0;
-    margin-left: 12px;
+    padding: 10px 15px 10px 0;
+    margin-left: 5px;
     color: #5c768d;
 }
 .mail-phone i{
     color: #428bca;
-    padding-right: 10px;
     font-size: 18px;
 }
 .socia-contact i{
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 15px;
 }
 .flex-quick-contact a:hover{
     color: #428bca;
+}
+
+
+
+/* -------social-connect */
+
+
+
+.manu-bar{
+    padding: 10px 0;
 }
 .flex-quick-access h2{
     text-decoration: none;
@@ -52,9 +73,13 @@
     display: inline-block;
     text-decoration: none;
     text-align: center;
-   padding: 15px 0 15px 30px;
-    font-size: 18px;
+    padding: 15px 0px 15px 30px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
     color: #444;
+}
+.quick-access-manu .manu-nav a:hover{
+    color: #428bca;
 }
 .dropdown{
     position: relative;
@@ -63,13 +88,48 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 100%;
+    right: 0;
+    top: 30px;
+    width: 200px;
     opacity: 0;
-   
+    background-color: #fff;
 }
 .dropdown > ul >li{
     display: block;
 } 
+.dropdown:hover .drop-nav{
+    opacity: 1;
+    background-color: #fff;
+    z-index: 2;
+    box-shadow: 0 0 5px rgb(124, 120, 120);
+    padding: 10px 0;
+}
+.dropdown-a > ul >li{
+    display: block;
+}  
+.dropdown-a{
+    position: relative;
+}
+.dropdown-a .drop-nav-a{
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    background-color: #fff;
+    opacity: 0;
+}
+.dropdown-a:hover .drop-nav-a{
+    opacity: 1;
+    padding: 10px 0;
+    box-shadow: 0 0 5px rgb(124, 120, 120);
+
+}
+
+
+
+/* --------------manu-bar----------------- */
+
+
 
 
 .flex-banner{
@@ -254,7 +314,7 @@
 .flex-features h3{
     font-family:  "Raleway", sans-serif;
     color: #444;
-    font-size: 25px;
+    font-size: 22px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -354,10 +414,15 @@
     background-color: #2196f3;
     margin: 15px auto;
 }
-.serivice-text h4{
+.serivice-text h4 a{
+    text-decoration: none;
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #444;
+    transition: all 0.3s ease;
+}
+.serivice-text h4 a:hover{
+    color: #428bca;
 }
 .serivice-text p{
     font-family: "Open Sans", sans-serif;
@@ -407,17 +472,38 @@
     text-align: center;
     padding-bottom: 25px;
 }
-
+.portfolio-botton ul{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-botton ul li{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.portfolio-botton .portfolio-all{
+    background-color: #428bca;
+    color: #fff;
+}
+.portfolio-botton ul li:hover {
+    background-color: #428bca;
+    color: #fff;
+}
 
 .flex-portfolio{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 80px;
+    padding-top: 30px;
 }
 .portfolio-box{
     width: 33.33%;
-   
-    
 }
 .portfolio-content{
     display: flex;
@@ -558,6 +644,7 @@
     height: auto;
 }
 .profile-pic img{
+    display: block;
     transition: all 0.5s ease;
     border-radius: 5px;
     
@@ -722,9 +809,10 @@
 
 /* -------form section------ */
 
-/* .container{
-    padding-bottom: 20px;
-} */
+.form{
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
 
 .flex-form{
     margin: 0 10px;
