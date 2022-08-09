@@ -181,8 +181,8 @@
 }
 .about-flex .buttontag {
     position: absolute;
-    width: 94px;
-    height: 94px;
+    /* width: 94px; */
+    /* height: 94px; */
     font-size: 70px;
     border-radius: 100%;
     top:44%;
