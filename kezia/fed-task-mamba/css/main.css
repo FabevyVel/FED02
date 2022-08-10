@@ -1,0 +1,267 @@
+.container{
+    width: 1150px;
+    margin: auto;
+    /* outline: solid 0.5px gray; */
+}
+
+.taskbar-box{
+    height: 100px;
+    color:hotpink;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.header-content{
+    text-align: center;
+    height: 453px;
+    color: hotpink;
+    font-weight: bolder;
+}
+
+/* About Section */
+.about-flex {
+    display: flex;
+}
+
+.about-image, .about-content{
+    text-align: center;
+    width: 100%;
+    height: 653px;
+    padding-top: 80px;
+    outline: solid 2px #607EAA; 
+    color: #FF8FB1;
+    font-weight: bolder;
+}
+
+.firstflex{
+    display: flex;
+}
+
+.firstflex .about-icon{
+    width: 20%;
+}
+
+.firstflex .about-text{
+    width: 80%;
+}
+
+/* Features Section */
+.feature-part1, .feature-part2{
+    display: flex;
+    /* width: 100%; */
+}
+
+.Feature-list1, .Feature-list2{
+    width: 33.33%;
+    height: 200px;
+    padding: 20px;
+    border: solid 1px #ccc;
+    border-top: 0px;
+}
+
+.Feature-list2{
+    border-bottom: none;
+}
+
+.Feature-list1:nth-child(1), .Feature-list2:nth-child(1){
+    border-left: 0px;
+}
+
+.Feature-list1:nth-child(3), .Feature-list2:nth-child(3){
+    border-right: 0px;
+}
+
+.Feature-list1 h4, .Feature-list2 h4{
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    color: #9eccf4;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Feature-list1 h3, .Feature-list2 h3{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Feature-list1 p, .Feature-list2 p{
+    color: #aaaaaa;
+    font-size: 17px;
+    margin: 0;
+    padding: 0px;
+}
+
+/* Stats Section */
+.stats{
+    background-color: #f5f9fc;
+    height:200px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.stats-box{
+    display: flex;
+    
+}
+
+.count{
+    width:25%;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow:0px 0px 15px gray;
+}
+
+.count h3{
+    font-size: 42px;
+    display: block;
+    font-weight: 700;
+    color: #1c5c93;
+    text-align: center!important;
+}
+
+.count p{
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+
+/* Services Section */
+.service-top, .service-bottom{
+    display: flex;
+}
+
+.service-title h2{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #5c768d;
+}
+
+.service1, .service2{
+    width:33.33%;
+    height: 200px;
+}
+/* Portfolio Section */
+.portfolio{
+    background-color: #f5f9fc;
+}
+
+.portfolio-box{
+    text-align: center;
+    height: 1134px;
+    color: hotpink;
+    font-weight: bolder;     
+}
+
+/* Teams Section */
+.team-box{
+    text-align: center;
+    height: 500px;
+    color: hotpink;
+    font-weight: bolder;      
+}
+
+/* FAQs Section */
+.faq{
+    background-color: #f5f9fc;
+    height: 650px;
+}
+
+.faq-top, .faq-bottom, .faq-middle{
+    display: flex;
+}
+
+.faq-title h2{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #5c768d;
+}
+.ques1, .ques2, .ques3{
+    width:50%;
+    height: 150px;
+    padding: 20px;
+    /* border: solid 1px #ccc; */
+    border-top: 0px;
+}
+
+.ques1 h4, .ques2 h4, .ques3 h4{
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1f3548;
+}
+
+.ques1 p, .ques2 p, .ques3 p{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    display: block;
+    line-height: 25px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+}
+
+/* Contact Section */
+.contact-box{
+    text-align: center;
+    height: 810px;
+    color: hotpink;
+    font-weight: bolder; 
+}
+
+/* Link Tree Section */
+.link-box{
+    text-align: center;
+    height: 340px;
+    color: hotpink;
+    font-weight: bolder; 
+}
+
+/* Copyrights section */
+.copyright-box{
+    text-align: center;
+    background: #587187;
+    padding: 30px 0 15px 0;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.credits{
+    background: #587187;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.copyright-box span{
+    font-weight: bolder;
+}
+
+.credits a{
+    color: #9eccf4;
+}
+
