@@ -903,13 +903,16 @@
 .social-media a{
     padding-top: 10px;
     width: 30px;
-    height: 20px;
-    border-radius: 20px;
+    height: 30px;
+    border-radius: 50%;
     background-color: #808B96;
     text-decoration: none;
     color: white;
-    line-height: 10px;
+    line-height: 30px;
+    display: flex;
     margin: 5px;
+    text-align: center;
+    justify-content: center;
    
     /* line-height: 36px; */
     /* display: inline-block; */
@@ -949,10 +952,11 @@
 }
 .mamba-1{
     padding-top: 30px;
-    padding-left: 100px;
+    padding-left: 40px;
     font-size: 25px;
     padding-bottom: 60px;
     width: 30%;
+    /* background-color: red; */
 }
 .news-head{
     font-size: 25px;
@@ -966,6 +970,8 @@
 }
 .but{
    line-height: 2;
+   /* background-color: red; */
+   
 }
 .subscribe{
     
@@ -973,6 +979,7 @@
     background-color: #428BCA;
     color: #f1f7fb;
     border: none;
+    margin-left: 0;
 }
 
 
@@ -993,5 +1000,7 @@
 .strong{
     font-size: 19px;
 }
-.legel
+.legel p{
+    padding-top: 30px;
+}
 
