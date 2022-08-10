@@ -159,8 +159,8 @@
     border: 0;
     background: #428bca;
 }
-. button .readmore{
-    padding-top: 100px;
+.readmore{
+    padding-top: 60px;
 }
 .button:hover{
     color: #428BCA; 
@@ -190,8 +190,9 @@
     height: auto;
     width: 90%;
     margin-top: -180px;
+    margin-left: 15px;
 }
-.about-1 .honour{
+.about-1 h1{
     font-size: 32px;
     font-weight: 600;
     text-align: center;
@@ -200,25 +201,25 @@
     color:#5c768d;
     margin-top: -180px;
 }
-.about-1 .axus{
-    font-size: 20px;
+.about-p{
+    font-size: 17px;
     padding-left: 10px;
     padding-bottom:25px;
+    text-align: left;
     font-style: italic;
     color: #666;
 }
 .logo-finger{
-    font-size:40px;
-    color: #468DCB;
-    background-color: #f1f7fb;
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 72px;
+    height: 72px;
+    background: #f1f7fb;
     border-radius: 6px;
-    box-sizing: border-box;
-    height: 60px;
-    width: 60px;
+    transition: 0.5s;
+    color: #468DCB;
 }
 .finger-print:hover .logo-finger{
     background-color: #468DCB;
@@ -228,35 +229,60 @@
 
 
 .logo-giftbox{
-    font-size: 40px;
-    color: #468DCB;
-    background-color: #f1f7fb;
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
-    box-sizing: border-box;
-    height: 60px;
-    width: 60px;
+    width: 72px;
+    height: 72px;
+    background: #f1f7fb;
+    border-radius: 6px;
+    transition: 0.5s;
+    color: #468DCB;
+    font-size: 30px;
 }
 .giftbox:hover .logo-giftbox{
     background-color: #468DCB;
     color:#f1f7fb;
     transition: 0.3s;
+    
 }
-.about-1 .redme{
-    font-size: 23px;
-    padding: 15px; 
-    padding-left: 80px;
+.finger-print h2{
+    margin-left: 16%;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #343a40;
+    font-family: "Raleway", sans-serif;
+}
+ .finger-p{
+    padding-bottom: 60px;
+    font-size: 15px;
+    color: #444;
     font-family: "Open Sans", sans-serif;
-}
-.about-1 .realme{
-    padding-bottom: 15px;
     margin-left: 95px;
     line-height: 24px;
-    font-size: 18px;
 }
+.finger-print h2:hover{
+    color:#428BCA
+}
+.giftbox h2{
+    margin-left: 16%;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #343a40;
+    font-family: "Raleway", sans-serif;
+}
+.giftbox h2:hover{
+    color:#428BCA
+
+}
+
+    
+
+
+
 
 
 
@@ -297,20 +323,23 @@
     border-bottom: none;
  }
 
-.features-1 .oppo{
+.features-1 h1{
     font-size: 25px;
     padding: 10px;
     color: #428BCA;
 }
-.features-1 .cam{
+.features-1 h2{
     font-size: 28px;
-    padding: 10px;
+    font-weight: 400;
+    padding: 0;
+    margin: 20px 0;
+    font-family: "Raleway", sans-serif;
+    color: #444;
 }
-.features-1 .vivo{
-    font-size: 20px;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ADADAD;    
+.features-1 p{
+    font-family: "Open Sans", sans-serif;
+    color: #aaaaaa;
+    font-size: 17px;    
 }
 
 
@@ -335,9 +364,9 @@
     padding: 40px;
     padding-right: 20px;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif; 
 }
-.ourworks-1 .oneplus{
+.ourworks-1 h1{
     font-size: 42px;
     display: block;
     font-weight: 700;
@@ -353,6 +382,7 @@
 .services{
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-left: 70px;
 }
 .service-list{
     display: flex;
@@ -390,10 +420,16 @@
     font-weight: 300px;
     font-family: "Open Sans", sans-serif;
     color: #444;
+    transition: 0.3s;
+}
+.service-text h4:hover{
+    color: #428BCA;
 }
 .service-text p{
+    line-height: 24px;
+    font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+
 }
 
 .service-line{
@@ -455,6 +491,7 @@
     padding-bottom: 30px;
     margin: 0 15px 15px 0;
     padding: 10px 20px;
+    
     /* border: none; */
     
  }
@@ -463,9 +500,7 @@
     height: 30px;
     border: none;
     transition: 0.5s;
-    border-radius: 4px;
     margin: 0 15px 15px 0;
-    display: inline-block;
     padding: 10px 20px;
     font-size: 12px;
     line-height: 20px;
@@ -648,40 +683,59 @@
     padding-bottom: 30px;
 }
 .faq-info{
-    font-size: 25px;
-    padding-bottom: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    color: #607d8b;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    color: #1f3548;
+    font-family: "Open Sans", sans-serif;
 }
 .faq-info-2{
     font-size: 18px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    padding-top: 20px;
     padding-right: 10px;
-    padding-left: 10px;
-    color: #5c768d;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+}
+.faq-info-21{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #1f3548;
+    font-family: "Open Sans", sans-serif;
+
 }
 .faq-info-3{
     padding-top: 10px;
     padding-bottom: 30px;
     font-size: 18px;
-    color: #5c768d;
-    margin-top: -40px;
+    color: #1f3548;
+    font-family: "Open Sans", sans-serif;
 }
 .faq-info-4{
-    font-size: 25px;
-    color:#607d8b;
-    padding-top: 10px;
+    font-size: 20px;
+    padding-top: 40px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #1f3548;
+    font-family: "Open Sans", sans-serif;
 }
 .faq-info-5{
     padding-top: 30px;
     font-size: 18px;
-    color: #5c768d
+    color: #444;
+    font-family: "Open Sans", sans-serif;
 }
 .faq-info-1{
-    padding-bottom: 40px;
-    font-size: 23px;
-    color: #607d8b;
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1f3548;
+    font-family: "Open Sans", sans-serif;
 }
 .faq-flex{
     display: flex;
@@ -707,6 +761,7 @@
     text-align: center;
     padding-bottom: 140px;
     color: #5C768D;
+    font-family: "Open Sans", sans-serif;
 }
 .contactus-flex{
     display: flex;
@@ -728,17 +783,20 @@
     color: #428BCA;
     border-radius: 100%;
     border: 2px dotted #9eccf4;
+    font-family: "Open Sans", sans-serif;
 }
 .table-1 h3{
     font-size: 27px;
     margin-left: 30px;
     color:#666666;
     padding-top: 20px;
+    font-family: "Open Sans", sans-serif;
 }
 .table-1 p{
     font-size: 17px;
     color: #767675;
     padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
 }
 .table-2{
     width: 25%;
@@ -747,6 +805,7 @@
    box-shadow: 0 0 10px #222;
    margin-right: 19px;
    margin-bottom: 19px;
+   font-family: "Open Sans", sans-serif;
 }
 .table-2 a{
     text-decoration: none;
@@ -755,6 +814,7 @@
     border-radius: 100%;
     border: 2px dotted #9eccf4;
     color: #428BCA;
+    font-family: "Open Sans", sans-serif;
 }
 .table-2 h3{
     font-size: 27px;
