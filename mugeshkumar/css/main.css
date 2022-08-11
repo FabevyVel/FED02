@@ -870,14 +870,14 @@
     
 }
 .contact-flex .contactbox {
-    width: 25%; 
+    width: 24%; 
     height: 180px;
     box-sizing: border-box;
 
  }
 
 .contact-flex .contactbox {
-    margin-left: 7.3px; 
+    margin-left: 23px; 
     padding-left: 15px;
     background-color: #fff;
     text-align: center;
