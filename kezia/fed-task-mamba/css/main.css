@@ -245,43 +245,291 @@
 }
 
 /* Services Section */
-.service-top, .service-bottom{
+.services{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.services h2{
     display: flex;
-}
-
-.service-title h2{
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    padding-bottom: 0;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
     color: #5c768d;
+    padding-bottom: 40px;
 }
+.services-sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-sec .services-box{
+    width: 33.33%;
+    
+}
+.services-content{
+    padding-top: 20px;
+    padding: 15px;
+}
+.services-content .serivice-icon {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%; 
+    background-color: #fff;
+    box-shadow: 0 0 10px #b0cce4;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 0 auto 25px;
+    transition: all 0.5s ease;
+}
+.serivice-icon{
+    font-size: 45px;
+    color: #2196f3;
+}
+.serivice-text{
+    text-align: center;
+}
+.text-ul{
+    width: 60px;
+    height: 2px;
+    background-color: #2196f3;
+    margin: 15px auto;
+}
+.serivice-text h4{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    color: #444;
+}
+.serivice-text p{
+    font-family: "Open Sans", sans-serif;
+    line-height: 28px;
+    color: #444;
+    font-size: 15px;
+}
+.services-box:hover .services-content .serivice-icon{
+    box-shadow: 0 0 20px #428bca;
+} 
 
-.service1, .service2{
-    width:33.33%;
-    height: 200px;
-}
 /* Portfolio Section */
 .portfolio{
     background-color: #f5f9fc;
 }
 
-.portfolio-box{
-    text-align: center;
-    height: 1134px;
-    color: hotpink;
-    font-weight: bolder;     
+.portfolio-title h2{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #5c768d;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 70px;
+    padding-bottom: 25px;
 }
 
-/* Teams Section */
-.team-box{
+.portfolio-title p{
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    font-size: 16px;
+    line-height: 30px;
     text-align: center;
-    height: 500px;
-    color: hotpink;
-    font-weight: bolder;      
+    padding-bottom: 25px;
 }
+
+
+.flex-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.portfolio-box{
+    width: 33.33%;
+   
+    
+}
+.portfolio-content{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.portfolio-content img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+   
+}
+.portfolio-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 53, 72, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease; 
+}
+.portfolio-first-text{
+    transform: translateY(-20px);
+    transition: all 0.5s ease; 
+}
+.portfolio-content:hover .portfolio-first-text{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.portfolio-first-text h4{ 
+    font-size: 22px;
+    display: flex;
+    color: #fff;
+    font-family: "Open Sans", sans-serif ;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.portfolio-first-text p{
+    display: flex; 
+    justify-content: center;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif ;
+    text-align: center;
+    margin-bottom: 17px;
+    margin-top: 15px;
+}
+
+.portfolio-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.portfolio-link a{
+    text-decoration: none;
+    color: #0d6efd;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    line-height: 35px;
+    align-items: center;
+    transition: all 0.5s ease;
+    font-size: 18px;
+}
+.portfolio-content:hover .portfolio-text{
+    opacity: 1;
+}
+.portfolio-content:hover img{
+    transform: scale(1.1);
+}
+.portfolio-link a:hover {
+    background-color: #007aff;
+    color: #fff;
+}
+
+
+/* Teams Section */
+.profile-title h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: #5c768d;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif,"Open Sans", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.profile-title p{
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    padding-bottom: 20px;
+}
+
+.flex-profile{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.profile-box{
+    width: 25%;
+    
+}
+.profile-sec{
+    position: relative;
+    padding: 13px;
+   
+}
+.profile-sec:hover .profile-pic img{
+    transform: scale(1.1);
+}
+.profile-pic{
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+}
+.team-profile{
+    width: 100%;
+    height: auto;
+}
+.profile-pic img{
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    
+}
+.profile-bio{
+    position: absolute;
+    left: 36px;
+    right: 36px;
+    bottom: -20px;  
+    background: linear-gradient(360deg, rgb(92, 118, 141) 0%, rgba(92, 118, 141, 0.9) 35%, rgba(140, 167, 191, 0.8) 100%);
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.profile-bio h4{
+    font-size: 17px;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+}
+.profile-bio .name-ul{
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    margin: 5px auto;
+}
+.profile-bio p {
+    color: #fff;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.profile-icon a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.profile-icon a:hover{
+    color: #87a5be;
+}
+
 
 /* FAQs Section */
 .faq{
